@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Water Potability Prediction</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <!-- Header section for title and names -->
+    <div class="header">
+        <h1>Water Contamination Detection</h1>
+        <p class="names">Jeeva M & Kumaraswamy G</p>
+    </div>
+
+    <!-- Main container for form -->
+    <div class="container">
+        <h2>Enter Water Quality Attributes</h2>
+        <form action="/predict" method="post">
+            <label>pH:</label>
+            <input type="number" step="0.01" name="ph" min="0" max="14" required>
+            
+            <label>Hardness:</label>
+            <input type="number" step="0.01" name="hardness" min="0" max="500" required>
+            
+            <label>Solids:</label>
+            <input type="number" step="0.01" name="solids" min="0" max="50000" required>
+            
+            <label>Chloramines:</label>
+            <input type="number" step="0.01" name="chloramines" min="0" max="10" required>
+            
+            <label>Sulfate:</label>
+            <input type="number" step="0.01" name="sulfate" min="0" max="500" required>
+            
+            <label>Conductivity:</label>
+            <input type="number" step="0.01" name="conductivity" min="0" max="800" required>
+            
+            <label>Organic Carbon:</label>
+            <input type="number" step="0.01" name="organic_carbon" min="0" max="30" required>
+            
+            <label>Trihalomethanes:</label>
+            <input type="number" step="0.01" name="trihalomethanes" min="0" max="100" required>
+            
+            <label>Turbidity:</label>
+            <input type="number" step="0.01" name="turbidity" min="0" max="5" required>
+            
+            <button type="submit">Predict Potability</button>
+        </form>
+    </div>
+</body>
+</html>
