@@ -1,13 +1,18 @@
-#Water Potability Prediction Using Machine Learning
-'''Overview'''
+Water Potability Prediction Using Machine Learning
+
+Overview
+
 This project is a machine learning-based solution to predict the potability of water based on its physicochemical properties. Using a Random Forest Classifier trained on a comprehensive dataset, the system evaluates parameters like pH, hardness, turbidity, and others to determine whether water is potable or not. A user-friendly web interface, built with Flask, allows users to input water quality attributes and receive real-time predictions.
 
-'''Features'''
-Predicts whether water is Potable or Not Potable based on key water quality parameters.
-Handles real-time inputs with a user-friendly Flask-based web interface.
-Includes data preprocessing with feature scaling for consistent predictions.
-Robust Random Forest Classifier model for reliable accuracy.
+Features
+
+1. Predicts whether water is Potable or Not Potable based on key water quality parameters.
+2. Handles real-time inputs with a user-friendly Flask-based web interface.
+3. Includes data preprocessing with feature scaling for consistent predictions.
+4. Robust Random Forest Classifier model for reliable accuracy.
+
 Dataset
+
 The dataset used for training and evaluation includes physicochemical attributes of water samples:
 
 Attributes: pH, Hardness, Solids, Chloramines, Sulfate, Conductivity, Organic Carbon, Trihalomethanes, Turbidity.
